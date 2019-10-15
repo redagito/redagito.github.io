@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;
+}
+
+hr, hr::before {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+hr {
+    border-width: 1px 0 0 0;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: 'Antic Didone', serif;
+    line-height: 1.6;
+}
+
+hr::before {
+    display: block;
+    content: "";
+    margin-top: -30px;
+    border-width: 0 0 1px 0;
+}
+
+.center-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-vertical-relative {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Header with image background with parallax effect */
+.header {
+    height: 100%;
+
+    background-image: url(img/background/hourglass.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    color: whitesmoke;
+}
+
+.header .title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 20px 5px 20px;
+    display: inline-block;
+}
+
+.header h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.header h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.header hr, .header hr::before {
+    border-color: whitesmoke;
+    max-width: 400px;
+}
+
+/* Inventory */
+.inventory-list {
+    color: black;
+    background-color: #ece0dd;
+    text-align: center;
+}
+
+.inventory-list .description {
+    padding: 10% 5%;
+}
+
+.inventory-list hr {
+    max-width: 400px;
+}
+
+.inventory-list h1 {
+    font-size: 30px;
+    line-height: 1.6;
+    letter-spacing: 5px;
+}
+
+.inventory-list p {
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inventory-list img {
+    transition: all 0.4s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.inventory-list img:hover {
+    filter: saturate(120%);
+}
+
+/* Footer */
+.footer {
+    background: grey;
+    color: whitesmoke;
+    height: 50px;
+    text-align: center;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer a:visited {
+    color: inherit;
+}
+
+.footer a:hover {
+    color: inherit;
+}
+
+.footer a:active {
+    color: inherit;
+}
